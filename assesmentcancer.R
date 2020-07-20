@@ -32,4 +32,32 @@ sum(tabacoalto$ncases)/all_cases
 alcytabmayor<-esoph%>%filter(alcgp=="120+"&tobgp=="30+")
 sum(alcytabmayor$ncases)/all_cases
 
-(sum(alcoholmayora120$ncases)+sum(tabacoalto$ncases))/all_cases
+
+alcotabalto<-esoph%>%filter(alcgp=="120+"|tobgp=="30+")
+a<-sum(alcotabalto$ncases)/all_cases
+
+#probability of a control de estar en el highest alcohol group
+control_alcoholalto<-sum(alcoholmayora120$ncontrols)/all_controls
+
+#probability of a case de estar en el highest alcohol group
+case_alcoholalto<-sum(alcoholmayora120$ncases)/all_cases
+
+#la cantidad de veces mayor que es la probabilidad de estar en el highest alcohol group being a case rather than being a control
+case_alcoholalto/control_alcoholalto
+
+#probability for control to be in the highest tobacco group
+sum(tabacoalto$ncontrols)/all_controls
+
+#For controls, the probability of being in the highest alcohol group and the highest tobacco group
+sum(alcytabmayor$ncontrols)/all_controls
+
+#For controls, the probability of being in the highest alcohol group or the highest tobacco group
+b<-sum(alcotabalto$ncontrols)/all_controls
+
+
+a<-sum(alcotabalto$ncases)/all_cases
+b<-sum(alcotabalto$ncontrols)/all_controls
+a/b
+
+
+
