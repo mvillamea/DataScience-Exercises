@@ -1,3 +1,4 @@
+
 set.seed(1) # set.seed(1, sample.kind="Rounding") if using R 3.6 or later
 disease <- sample(c(0,1), size=1e6, replace=TRUE, prob=c(0.98,0.02))
 test <- rep(NA, 1e6)

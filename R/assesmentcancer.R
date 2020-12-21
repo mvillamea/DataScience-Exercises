@@ -1,4 +1,5 @@
-#Each row contains one group of the experiment. Each group has a different combination of age, alcohol consumption, and tobacco consumption. The number of cancer cases and number of controls (individuals without cancer) are reported for each group.
+#Each row contains one group of the experiment.
+#Each group has a different combination of age, alcohol consumption, and tobacco consumption. The number of cancer cases and number of controls (individuals without cancer) are reported for each group.
 
 #How many groups are in the study?
 dim(esoph)[1]
