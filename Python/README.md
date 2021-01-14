@@ -1,4 +1,4 @@
-# Python
+# Python :snake:
 
 ## Consumo energético
 * analisisconsumoeolicosolar.py: 
